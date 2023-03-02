@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./styles/kontakt.css">
+   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@500&family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+   <title>Fetch Json Server vs Json Placeholder</title>
+</head>
+
+<body>
+    <main>
+      <div class="main-container">
+         <div class="content" id="content">
+          <form id="form">
+            <div class="form-heading">
+              <p>Skriv in nåt</p>
+            </div>
+            
+            <div class="media">
+                <div class="left-input">
+                  <div>
+                    <label for="user-item-input" id="user-item-label">HÄR:</label>
+                  </div>
+                  <div class="user-item">
+                    <input type="text" id="user-item-input">
+                  </div>
+                </div>
+          
+                <div class="btn">
+                  <button id="skicka-btn">Lägg till</button>
+                </div>
+              </div>
+            </div>
+          </div>
+       </form>
+       
+       <div id="render-item"></div>
+    </main>
+  
+
+<script src="kontakt.js"></script>
+
+</body>
+</html>
+
+
+<!-- För godkänt ska du göra följande:
+
+Använda Fetch när sidan laddas för att hämta hem todos från databasen till en lista som sedan ska visas på sidan
+Skapa ett formulär med en text input och en knapp där användare kan lägga till en ny todo. Denna input ska valideras 
+så att det inte går att lägga till en tom todo.
+
+När den nya todon läggs till så ska du använda fetch för att göra en POST till databasen och sedan använda ditt response för att lägga 
+till todon i listan.
+
+Det ska även skrivas ut en text som talar om för användaren vad som blivit fel om ingen text har skrivits in.
+Det ska gå att ta bort en todo från listan och du ska även göra en DELETE mot databasen då.
+ 
+
+ För väl godkänt ska du göra följande:
+
+Klarmarkera en todo och visa tydligt att denna är färdig genom att ändra styling på den. 
+Det ska även gå att ändra tillbaka till ”oklar” om det är så att man kanske tryckte fel.
+Todos som är "klara" när de hämtas från databasen skall även dessa få samma styling.
+Det ska inte gå att ta bort en todo om den inte är klarmarkerad. Om man ändå försöker 
+ta bort en todo så skall en modal (popup) visas istället med en text som förklarar varför det inte går. Denna få inte vara en vanlig alert()
+Du ska även begränsa hämtningen av antal todos från databasen när sidan laddas till 7 stycken med hjälp av en URL query. -->
