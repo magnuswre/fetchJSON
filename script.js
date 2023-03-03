@@ -10,7 +10,7 @@ let userItemInput = document.querySelector('#user-item-input')
 // en evighetsloop skapas mot BASE_URL = 'http://localhost:3000/posts/' 
 // men inte mot BASE_URL = 'https://jsonplaceholder.typicode.com/posts/'    
 
-
+// för att starta servern skriv:  json-server --watch db.json    i teminalen.   
 
 // const BASE_URL = 'https://jsonplaceholder.typicode.com/posts/' 
 const BASE_URL = 'http://localhost:3000/posts/' 
